@@ -1,5 +1,6 @@
 import requests
 import json
+import os, sys
 
 URL_API = "https://slack.com/api/chat.postMessage"
 SLACK_USER = "Jenkins"
