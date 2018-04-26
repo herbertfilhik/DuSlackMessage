@@ -21,8 +21,6 @@ class Slack:
 
 
 	def send(self, text, attachments=None):
-
-		"""" Valida os dados antes do envio da requisição e trata o retorno após a mesma """
 		
 		self.text = text
 		self.attachments = attachments
