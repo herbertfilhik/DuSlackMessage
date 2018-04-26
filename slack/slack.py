@@ -26,7 +26,7 @@ class Slack:
 		self.attachments = attachments
 
 		if self.channel == None:
-			raise Exception("Destinatário da menssagem não foi definido!")
+			raise Exception("Destinatario da menssagem nao foi definido!")
 
 		try:
 			response = self.make_request(self.build_data(self.channel, self.text, self.attachments))
@@ -34,14 +34,14 @@ class Slack:
 			if ok:
 				print("Mensagem Enviada Com Sucesso!")
 			else:
-				raise Exception("Resposta da API indica que a mensagem não foi devidamente enviada!")
+				raise Exception("Resposta da API indica que a mensagem nao foi devidamente enviada!")
 		except Exception as e:
-			raise Exception("Erro ao realizar requisição: " + str(e))
+			raise Exception("Erro ao realizar requisicao: " + str(e))
 
 
 	def make_request(self, JSONdata):
 
-		""" Efetivamente executa a requisição a API do Slack """
+		""" Efetivamente executa a requisicao a API do Slack """
 
 		return requests.post(
 				URL_API,
@@ -74,7 +74,7 @@ class Slack:
 
 	def test_attachment(self, attachments):
 
-		""" Testa a url da imagem a ser exibida na mensagem, caso não seja encontrada nenhuma imagem será anexada"""
+		""" Testa a url da imagem a ser exibida na mensagem, caso nao seja encontrada nenhuma imagem sera anexada"""
 		
 		if attachments == None:
 			return False
