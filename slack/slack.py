@@ -46,7 +46,7 @@ class Slack:
 		return requests.post(
 				URL_API,
 				data=JSONdata,
-				headers={**CONTENTTYPE_HEADER, **AUTHORIZATION_HEADER}
+				headers={*CONTENTTYPE_HEADER, *AUTHORIZATION_HEADER}
 			)
 
 	def build_data(self, channel, text, attachments):
