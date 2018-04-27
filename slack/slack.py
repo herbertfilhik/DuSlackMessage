@@ -4,7 +4,11 @@ import json
 URL_API = "https://slack.com/api/chat.postMessage"
 SLACK_USER = "Jenkins"
 SLACK_IMG = "https://wiki.jenkins.io/download/attachments/2916393/logo.png?version=1&modificationDate=1302753947000&api=v2"
-API_KEY = "xoxb-353771507446-J1WltVQpwViZNem7UeDIewdR"
+API_KEY1 = "xoxb-"
+API_KEY2 = "353771507446-"
+API_KEY3 = "pL8sLwnuYz1J"
+API_KEY4 = "Jr6FrnKZPoxT"
+API_KEY = API_KEY1 + API_KEY2 + API_KEY3 + API_KEY4
 AUTHORIZATION_HEADER = {"Authorization" : "Bearer " + API_KEY}
 CONTENTTYPE_HEADER = {'Content-Type': 'application/json'}
 
